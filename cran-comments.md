@@ -2,7 +2,7 @@
 
 * macOS (latest) — R release
 * Windows (latest) — R release
-* Ubuntu 22.04 — R release, R devel, R oldrel-1
+* Ubuntu 22.04 — R release, R devel
 
 All checks run via GitHub Actions.
 
@@ -31,6 +31,8 @@ This is a major update (1.0.7 → 2.0.0). The last CRAN release was in April 202
 * Replaced deprecated ggplot2 functions (`aes_string()`, `stat()`, `guide_legend(override.aes)`)
 * Added comprehensive test suite (113 tests via testthat)
 * Fixed documentation issues (lost braces, bare URLs, missing `\value` tags)
+* Raised the plotting-stack support floor to `R >= 4.5.0`,
+  `ggplot2 >= 4.0.0`, and `ggrepel >= 0.9.7`
 
 ## Resubmission
 
@@ -40,6 +42,9 @@ This is a resubmission. In this version I have:
   crawlers. The URLs are valid and accessible in a browser; the server
   returns 503 to automated crawlers. This affects URLs in DESCRIPTION,
   README.md, and man/*.Rd files.
+* Removed the Ubuntu `oldrel-1` CI workaround that pinned `ggrepel` to
+  `0.9.5`, because the current development baseline now requires
+  `R >= 4.5.0`.
 
 ## Downstream dependencies
 

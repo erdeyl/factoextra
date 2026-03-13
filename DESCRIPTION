@@ -25,8 +25,8 @@ LazyData: true
 LazyDataCompression: xz
 Encoding: UTF-8
 Depends:
-    R (>= 4.1.0),
-    ggplot2 (>= 3.5.2)
+    R (>= 4.5.0),
+    ggplot2 (>= 4.0.0)
 Imports:
     cluster (>= 2.1.8.2),
     dendextend (>= 1.19.1),
@@ -35,7 +35,7 @@ Imports:
     grid,
     rlang (>= 1.1.7),
     stats,
-    ggrepel (>= 0.9.5)
+    ggrepel (>= 0.9.7)
 Suggests:
     ade4,
     ca,

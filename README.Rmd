@@ -124,8 +124,9 @@ remotes::install_github("kassambara/factoextra")
 
 The current maintenance baseline targets:
 
-- `R >= 4.1.0`
-- `ggplot2 >= 3.5.2`
+- `R >= 4.5.0`
+- `ggplot2 >= 4.0.0`
+- `ggrepel >= 0.9.7`
 - `ggpubr >= 0.6.3` (CRAN)
 - `FactoMineR >= 2.13`
      
@@ -139,6 +140,9 @@ library("factoextra")
 ## Recent compatibility updates
 
 ```{r, eval = FALSE}
+# Updated plotting stack baseline
+# R >= 4.5.0, ggplot2 >= 4.0.0, ggrepel >= 0.9.7
+
 # New helper: map legacy FactoMineR category labels
 map_factominer_legacy_names(res.mfa, c("var.level"))
 

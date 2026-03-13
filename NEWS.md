@@ -8,6 +8,9 @@
   `quali.sup`, including the related overlay, print, and category-name
   compatibility paths. Regression coverage and examples were expanded
   accordingly. (#202, @erdeyl)
+* Raised dependency floors to `R >= 4.5.0`, `ggplot2 >= 4.0.0`, and
+  `ggrepel >= 0.9.7`, and removed the `oldrel-1` CI workaround that pinned
+  `ggrepel` to `0.9.5`.
 
 # factoextra 2.0.0
 
